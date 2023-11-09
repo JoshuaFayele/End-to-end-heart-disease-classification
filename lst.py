@@ -1,3 +1,5 @@
+st.title("My Streamlit Learning")
+
 # Basics & Fundamentals
 
 # Core Packages
