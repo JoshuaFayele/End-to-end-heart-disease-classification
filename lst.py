@@ -104,22 +104,22 @@ import streamlit as st
 #     st.text("Hello Julia")
 
 # Select?Multiple select
-my_lang = ["Python", "Julia", "Go", "Rust"]
+# my_lang = ["Python", "Julia", "Go", "Rust"]
 
-choice = st.selectbox("Language", my_lang)
-st.write("You selected {}".format(choice))
+# choice = st.selectbox("Language", my_lang)
+# st.write("You selected {}".format(choice))
 
 # Multiple Selection
-spoken_lang = ("English", "French", "Spanish", "Twi")
-my_spoken_lang = st.multiselect("Spoken Language", spoken_lang, default="English")
+# spoken_lang = ("English", "French", "Spanish", "Twi")
+# my_spoken_lang = st.multiselect("Spoken Language", spoken_lang, default="English")
 
 # Slider
 # Numbers (Int/Float/Dates)
-age = st.slider("Age", 1, 100)
+# age = st.slider("Age", 1, 100)
 
 # Any Datatype
 # Select Slider
-colour = st.select_slider("Choose Colour", options=["yellow", "red", "blue", "black", "white"], value=("yellow", "red"))
+# colour = st.select_slider("Choose Colour", options=["yellow", "red", "blue", "black", "white"], value=("yellow", "red"))
 
 # Working with Media Files (videos/images/audio)
 # Display Images
@@ -131,13 +131,35 @@ colour = st.select_slider("Choose Colour", options=["yellow", "red", "blue", "bl
 # st.image("https://th.bing.com/th/id/OIP.TYRKmRLMGM3TQMjEg3dc1AHaJQ?pid=ImgDet&rs=1")
 
 # Display Videos
-video_file = open("D:\Downloads\data\secret_of_success.mp4", "rb").read()
-st.video(video_file, start_time=3)
+# video_file = open("D:\Downloads\data\secret_of_success.mp4", "rb").read()
+# st.video(video_file, start_time=3)
 
 # video_file1 = open("D:\Little Italy (2018)\Little Italy (2018) 1080p WEBRip [xPau.se].mp4", "rb").read()
 # st.video(video_file1)
 
 # Display Audio/Working with Audio
-audio_file = open("D:\Downloads\data\song.mp3", "rb")
-st.audio(audio_file.read(), format='audio/mp3')
+# audio_file = open("D:\Downloads\data\song.mp3", "rb")
+# st.audio(audio_file.read(), format='audio/mp3')
 
+# Text Input
+# fname = st.text_input("Enter First Name", max_chars=10)
+# st.title(fname)
+
+# Text Input Hide Password
+# password = st.text_input("Enter Password", type='password')
+
+# Text Area
+# message = st.text_area("Enter Message", height=100)
+# st.write(message)
+
+# Numbers
+# number = st.number_input("Enter Number", 1.0, 25.0)
+
+# Date Input
+# myappointment = st.date_input("Appointment")
+
+# Time Input
+# mytime = st.time_input("My Time")
+
+# Colour Picker
+# color = st.color_picker("Select Color")
