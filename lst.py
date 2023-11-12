@@ -163,3 +163,9 @@ import streamlit as st
 
 # Colour Picker
 # color = st.color_picker("Select Color")
+
+# Configure Streamlit page
+# Must be the first activity of streamlit
+from PIL import Image
+img = Image.open("D:\Downloads\onaldo.png")
+st.set_page_config(page_title='My Streamlit Learning', page_icon=img)
