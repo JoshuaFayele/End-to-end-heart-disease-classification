@@ -168,4 +168,41 @@ import streamlit as st
 # Must be the first activity of streamlit
 from PIL import Image
 img = Image.open("D:\Downloads\onaldo.png")
-st.set_page_config(page_title='My Streamlit Learning', page_icon=img)
+
+# Method 1
+# st.set_page_config(page_title='My Streamlit Learning', 
+#                    page_icon=img, layout='wide', initial_sidebar_state='auto')
+
+# Method 2: Dictionary
+# PAGE_CONFIG = {"page_title":"Henser Curdley", "page_icon":":smiley", "layout":"centered"}
+# st.set_page_config(**PAGE_CONFIG)
+
+# Fxns
+# def main():
+#     """All codes goes here"""
+    
+# st.title("Hello Streamlit Lovers")
+# st.sidebar.success("Menu")
+
+
+# if __name__ == '_main_':
+#     main()
+
+
+# Plotting in Streamlit Using Plotly
+# Load EDA Package
+import pandas as pd
+import numpy as np
+
+# Load Data Vis Pkg
+import plotly.express as px
+
+def main():
+    st.title("Plotting In Streamlit with Plotly")
+    df = pd.read_csv("D:\Downloads\data\prog_languages_data.csv")
+    st.dataframe(df)
+
+
+
+if __name__ == '_main_':
+    main()
