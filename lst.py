@@ -201,8 +201,15 @@ def main():
     st.title("Plotting In Streamlit with Plotly")
     df = pd.read_csv("D:\Downloads\data\prog_languages_data.csv")
     st.dataframe(df)
-
-
-
-if __name__ == '_main_':
+    
+    # Pie Chart
+    fig = px.pie(df, values='Sum', names='lang', title='Pie Chart of Languages')
+    st.plotly_chart(fig)
+    
+    # Bar Chart
+    fig2 = px.bar(df, x='lang', y='Sum')
+    st.plotly_chart(fig2)
+        
+    
+if __name__ == '__main__':
     main()
